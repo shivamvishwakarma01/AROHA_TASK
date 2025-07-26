@@ -1,0 +1,247 @@
+/* Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+.act{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* Navigation - Consistent with main site */
+
+.nav {
+    height: 80px;
+    width: 100vw;
+    background-color:rgb(37, 37, 37);
+    color: #FFF8E1;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.aasha {
+    font-size: 50px;
+    padding: 5px;
+    font-style: oblique;
+    font-weight: 200;
+    color: #FFF8E1;
+}
+
+.list {
+   
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    margin-left: auto;
+}
+.act:hover{
+color: #D7CCC8; 
+}
+
+.list li {
+    color: #FFF8E1;
+    cursor: pointer;
+}
+
+.list li.active {
+    color: #D7CCC8;
+    font-weight: bold;
+}
+
+.list li:hover {
+    color: #D7CCC8;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* About Hero Section */
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('images/hero-about.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 80px; /* Account for fixed nav */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main Content */
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: rgb(37, 37, 37);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Impact Section */
+.impact-section {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.impact-section h2 {
+    font-size: 2.5rem;
+    color:rgb(37, 37, 37);
+    margin-bottom: 50px;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item {
+    background-color: #FFF8E1;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(37, 37, 37);
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color:rgb(37, 37, 37);
+    color: #FFF8E1;
+    padding: 40px 0 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #D7CCC8;
+}
+
+.footer-section p, .footer-section a {
+    color: #FFF8E1;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #D7CCC8;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,248,225,0.2);
+}
+
